@@ -1,0 +1,350 @@
+/*Codigo desarrollado por Jordy Agbidi*/
+
+:root{
+	--cabezaw: 98.5vw;
+	--cabezah: 99.5vh;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Montserrat;
+}
+
+hr{
+	opacity: 0.4;
+}
+/*Cabecera de la landing page*/
+
+.cabeza{
+	border: 1px solid black;
+	height: var(--cabezah);
+	width: var(--cabezaw);
+	background-image: url(img/img1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.flexcabeza{
+	width: var(--cabezaw);
+	height: var(--cabezah);
+	background-color: rgba(0, 0, 0, 0.46);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flexcabeza h1{
+	font-size: 1.7em;
+
+	min-width: 60%;
+	max-width: 75%;
+	padding: 10px;
+	height: auto;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px rgb(0,0,0);
+
+}
+
+
+.button0{
+	margin: 30px 0;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid rgb(255, 80, 45);
+	cursor: pointer;
+	transition: 0.5s background-color;
+}
+
+.button0:hover{
+	background-color: rgb(241, 123, 4);
+
+}
+.button0 a{
+	font-size: 1.45em;
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	transition: 1s font-size, 0.5s color;
+	
+}
+
+.button0 a:hover{
+	color: rgb(255, 255, 255);
+	font-size: 1.55em;
+}
+
+.boxcabeza{
+	width: auto;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.boxcabeza p{
+	margin-top: 15px;
+	text-align: center;
+	color:rgba(255, 255, 255, 0.56) ;
+	font-size: 1.2em;
+	padding: 5px;
+	border-radius: 30px;
+}
+
+.boxcabeza p strong{
+	font-size: 1.1em;
+}
+
+.txtdetallcabeza{
+	font-size: 0.7em;
+	text-align: center;
+	color: rgb(255,255,255);
+}
+
+/*Sector 1*/
+/*Sectores generales*/
+
+.sector{
+	width:98.9%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bloctxt{
+	width: 80%;
+	margin: 30px 0;
+}
+
+.bloctxt h2{
+	font-size: 1.56em;
+	text-align: center;
+	color: rgb(0, 0, 0);
+
+}
+
+.txtsector{
+	text-align: justify;
+	font-size: 1em;
+}
+
+.txtsector strong{
+	color: rgb(255, 80, 45);
+}
+
+.centrar_p{
+	text-align: center;
+	font-size: 1em;
+}
+
+
+.centrar_p strong{
+	color: rgb(255, 80, 45);
+}
+
+/*Sector 2*/
+/*titulo 3*/
+.bloctxt h3{
+	font-size: 1.25em;
+	text-align: center;
+	color:  rgb(230, 80, 45);
+	padding: 8px;
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.flexblocbox{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.blocbox{
+	width: 200px;
+	height: auto;
+	padding: 10px;
+	border-radius: 10px;
+	border: 5px double rgb(255, 80, 45);
+	display: inline-block;
+	margin: 10px;
+	font-size: 1em;
+	transition: 1.5s font-size;
+	transition-timing-function: ease;
+	cursor: pointer;
+
+}
+
+.blocbox:hover{
+	background-color: rgb(255, 80, 45);
+	color: white;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+
+/*Sector 3*/
+.img2{
+	background-image: url(img/img2.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat:no-repeat;
+	position: relative;
+	z-index: -2;
+	background-attachment: fixed;
+}
+
+.imgfiltr{
+	background-color: rgba(0, 0,0, 0.6);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.img2 .bloctxt p,.img2 .bloctxt h2{
+	color: rgb(255,255,255);
+	text-shadow: 1px 1px black;
+	z-index: 2;
+}
+
+/*Sector de pros y contras*/
+.flexpro{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.flexprocase{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+}
+.procase{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+.txtpros{
+	font-size: 1em;
+	text-align: justify;
+	width: 60%;
+}
+.pro, .contra{
+	width: 40px;
+	height: 40px;
+	margin: 15px;
+}
+
+.pro{
+	background-image: url(img/pro.png);
+	background-size: cover;
+}
+
+.contra{
+	background-image: url(img/contra.png);
+	background-size: cover;
+}
+
+
+/*Barner*/
+.barner{
+	border: 3px solid  rgb(255, 80, 45);
+	padding: 20px;
+	outline: 1px solid black;
+	margin: 10px 0 0 0;
+}
+
+.blink{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*Mediaqueris*/
+/*anchura*/
+
+@media (min-width: 1024px){
+
+	/*Cabecera*/
+	.flexcabeza h1{
+		font-size: 2.65em;
+	}
+	.txtdetallcabeza{
+		font-size: 1.1;
+	}
+	.boxcabeza p strong{
+		font-size: 1.4em;
+	}
+	.boxcabeza p{
+		font-size: 1.3em;
+	}
+
+
+	/*Sectores generales*/
+	.bloctxt h2{
+		font-size: 1.8em;
+	}
+
+	.txtsector{
+		font-size: 1.35em;
+	}
+	.centrar_p{
+		font-size: 1.35em;
+	}
+
+	/*Sectores generales*/
+	.sector{
+		margin-top:  20px;
+	}
+
+	.bloctxt{
+		width: 70%;
+	}
+
+	/*Sector 2*/
+	.blocbox{
+		font-size: 1.25m;
+		width: auto;
+	}
+
+
+	.flexblocbox{
+		flex-direction: row;
+	}
+	/*Sector 3*/
+	.img2{
+		background-size:100% 150%;
+		background-position: top;
+
+	}
+
+	/*zona pros y contras*/
+	.txtpros{
+		font-size: 1.35em;
+	}
+
+}
+
+/*altura*/
+@media (max-height: 580px){
+	/*Cabecera*/
+	.boxcabeza{
+		display: none;
+	}
+}
